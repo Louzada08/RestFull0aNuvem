@@ -1,0 +1,14 @@
+D:\ProjetoCursos\RestFull0aNuvem\RestFull0aNuvem\RestFull0aNuvem\bin\Debug\netcoreapp2.1\RestFull0aNuvem.deps.json
+D:\ProjetoCursos\RestFull0aNuvem\RestFull0aNuvem\RestFull0aNuvem\bin\Debug\netcoreapp2.1\RestFull0aNuvem.runtimeconfig.json
+D:\ProjetoCursos\RestFull0aNuvem\RestFull0aNuvem\RestFull0aNuvem\bin\Debug\netcoreapp2.1\RestFull0aNuvem.runtimeconfig.dev.json
+D:\ProjetoCursos\RestFull0aNuvem\RestFull0aNuvem\RestFull0aNuvem\bin\Debug\netcoreapp2.1\RestFull0aNuvem.dll
+D:\ProjetoCursos\RestFull0aNuvem\RestFull0aNuvem\RestFull0aNuvem\bin\Debug\netcoreapp2.1\RestFull0aNuvem.pdb
+D:\ProjetoCursos\RestFull0aNuvem\RestFull0aNuvem\RestFull0aNuvem\obj\Debug\netcoreapp2.1\RestFull0aNuvem.csprojAssemblyReference.cache
+D:\ProjetoCursos\RestFull0aNuvem\RestFull0aNuvem\RestFull0aNuvem\obj\Debug\netcoreapp2.1\RestFull0aNuvem.csproj.CoreCompileInputs.cache
+D:\ProjetoCursos\RestFull0aNuvem\RestFull0aNuvem\RestFull0aNuvem\obj\Debug\netcoreapp2.1\RestFull0aNuvem.RazorAssemblyInfo.cache
+D:\ProjetoCursos\RestFull0aNuvem\RestFull0aNuvem\RestFull0aNuvem\obj\Debug\netcoreapp2.1\RestFull0aNuvem.RazorAssemblyInfo.cs
+D:\ProjetoCursos\RestFull0aNuvem\RestFull0aNuvem\RestFull0aNuvem\obj\Debug\netcoreapp2.1\RestFull0aNuvem.AssemblyInfoInputs.cache
+D:\ProjetoCursos\RestFull0aNuvem\RestFull0aNuvem\RestFull0aNuvem\obj\Debug\netcoreapp2.1\RestFull0aNuvem.AssemblyInfo.cs
+D:\ProjetoCursos\RestFull0aNuvem\RestFull0aNuvem\RestFull0aNuvem\obj\Debug\netcoreapp2.1\RestFull0aNuvem.RazorTargetAssemblyInfo.cache
+D:\ProjetoCursos\RestFull0aNuvem\RestFull0aNuvem\RestFull0aNuvem\obj\Debug\netcoreapp2.1\RestFull0aNuvem.dll
+D:\ProjetoCursos\RestFull0aNuvem\RestFull0aNuvem\RestFull0aNuvem\obj\Debug\netcoreapp2.1\RestFull0aNuvem.pdb
