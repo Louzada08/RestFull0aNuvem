@@ -9,14 +9,27 @@ namespace RestFull0aNuvem.Services.Implementations
     {
         private int count;
 
+        public PersonServiceImplementations()
+        {
+            List<Person> person = new List<Person>();
+            person = FindAll();
+        }
+
         public Person Create(Person person)
         {
             return person;
         }
 
-        public void Delete(long id)
+        public List<Person> Delete(int id)
         {
-            throw new NotImplementedException();
+            List<Person> persons = new List<Person>();
+            for (int i = 0; i < 8; i++)
+            {
+                Person person = MockPerson(i);
+                persons.Add(person);
+            }
+            if (id > -1 && id < 8) persons.RemoveAt(id);
+            return persons;
         }
 
         public List<Person> FindAll()
@@ -27,6 +40,7 @@ namespace RestFull0aNuvem.Services.Implementations
                 Person person = MockPerson(i);
                 persons.Add(person);
             }
+           
             return persons;
         }
 

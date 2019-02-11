@@ -9,6 +9,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using RestFull0aNuvem.Services;
+using RestFull0aNuvem.Services.Implementations;
 
 namespace RestFull0aNuvem
 {
@@ -25,6 +27,8 @@ namespace RestFull0aNuvem
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            //Injeção de dependencia
+            services.AddScoped<IPersonService, PersonServiceImplementations>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
