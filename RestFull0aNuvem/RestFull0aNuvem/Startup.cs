@@ -1,34 +1,35 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using RestFull0aNuvem.Services;
 using RestFull0aNuvem.Services.Implementations;
+using RestFull0aNuvem.Model.Context;
+using Microsoft.AspNetCore.Builder;
 
 namespace RestFull0aNuvem
 {
     public class Startup
     {
+        public IConfiguration Configuration { get; }
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }
-
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            var ConnBd = Configuration["SqlConnection:StrSqlConnection"];
+
+            services.AddDbContext<BdFoodContext>(options => options.UseSqlServer(ConnBd));
+
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
             //Injeção de dependencia
-            services.AddScoped<IPersonService, PersonServiceImplementations>();
+            services.AddScoped<IUsuarioService, UsuarioServiceImplementations>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,8 +39,8 @@ namespace RestFull0aNuvem
             {
                 app.UseDeveloperExceptionPage();
             }
-
             app.UseMvc();
         }
+
     }
 }
