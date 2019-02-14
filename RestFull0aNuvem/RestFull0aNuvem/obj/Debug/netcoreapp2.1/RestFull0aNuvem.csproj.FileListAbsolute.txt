@@ -11,3 +11,4 @@ D:\ProjetoCursos\RestFull0aNuvem\RestFull0aNuvem\RestFull0aNuvem\obj\Debug\netco
 D:\ProjetoCursos\RestFull0aNuvem\RestFull0aNuvem\RestFull0aNuvem\obj\Debug\netcoreapp2.1\RestFull0aNuvem.RazorTargetAssemblyInfo.cache
 D:\ProjetoCursos\RestFull0aNuvem\RestFull0aNuvem\RestFull0aNuvem\obj\Debug\netcoreapp2.1\RestFull0aNuvem.dll
 D:\ProjetoCursos\RestFull0aNuvem\RestFull0aNuvem\RestFull0aNuvem\obj\Debug\netcoreapp2.1\RestFull0aNuvem.pdb
+D:\ProjetoCursos\RestFull0aNuvem\RestFull0aNuvem\RestFull0aNuvem\obj\Debug\netcoreapp2.1\RestFull0aNuvem.csprojAssemblyReference.cache

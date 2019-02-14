@@ -12,7 +12,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "api/usuarios",
+      "launchUrl": "v1/usuarios",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -20,7 +20,7 @@
     "RestFull0aNuvem": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/usuarios",
+      "launchUrl": "v1/usuarios",
       "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

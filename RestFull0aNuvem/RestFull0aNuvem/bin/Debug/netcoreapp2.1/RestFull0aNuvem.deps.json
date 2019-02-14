@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "582f71f0bd038fdfdce3c19ff85f926a878c61b6"
+    "signature": "bd72e010b98a9b333b9602247d7cdcdb6242816a"
   },
   "compilationOptions": {
     "defines": [
@@ -26,6 +26,7 @@
         "dependencies": {
           "Microsoft.AspNetCore": "2.2.0",
           "Microsoft.AspNetCore.Mvc": "2.2.0",
+          "Microsoft.AspNetCore.Mvc.Versioning": "3.1.2",
           "Microsoft.EntityFrameworkCore": "2.2.1",
           "Microsoft.EntityFrameworkCore.Design": "2.2.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.2.1",
@@ -673,6 +674,20 @@
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.TagHelpers.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.Versioning/3.1.2": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Versioning.dll": {
+            "assemblyVersion": "3.1.0.0",
+            "fileVersion": "3.1.6968.34335"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Versioning.dll": {}
         }
       },
       "Microsoft.AspNetCore.Mvc.ViewFeatures/2.2.0": {
@@ -3099,6 +3114,13 @@
       "sha512": "sha512-tJl+jzZaJ5U6jrfVsX/hwzM4TDr7SAponEyhZfV9dmfxl/mt3wAPeFNn3N6Wwpzcna/8rXEln2qEFDAseM+WoQ==",
       "path": "microsoft.aspnetcore.mvc.taghelpers/2.2.0",
       "hashPath": "microsoft.aspnetcore.mvc.taghelpers.2.2.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Mvc.Versioning/3.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XcPWILCgNXwQoCAaEZGByQc5aDbZv/CSAH4e85+c8Pd11tNOFY+na8vPP/97UT2S9fkAS2UPi28Ut2mv3DeL7w==",
+      "path": "microsoft.aspnetcore.mvc.versioning/3.1.2",
+      "hashPath": "microsoft.aspnetcore.mvc.versioning.3.1.2.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Mvc.ViewFeatures/2.2.0": {
       "type": "package",

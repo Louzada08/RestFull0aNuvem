@@ -570,6 +570,18 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.TagHelpers.dll": {}
         }
       },
+      "Microsoft.AspNetCore.Mvc.Versioning/3.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Core": "[2.2.0, 3.0.0)"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Versioning.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Versioning.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Mvc.ViewFeatures/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -3525,6 +3537,20 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.TagHelpers.xml",
         "microsoft.aspnetcore.mvc.taghelpers.2.2.0.nupkg.sha512",
         "microsoft.aspnetcore.mvc.taghelpers.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Mvc.Versioning/3.1.2": {
+      "sha512": "XcPWILCgNXwQoCAaEZGByQc5aDbZv/CSAH4e85+c8Pd11tNOFY+na8vPP/97UT2S9fkAS2UPi28Ut2mv3DeL7w==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.mvc.versioning/3.1.2",
+      "files": [
+        ".signature.p7s",
+        "LICENSE",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Versioning.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Versioning.pdb",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Versioning.xml",
+        "microsoft.aspnetcore.mvc.versioning.3.1.2.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.versioning.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Mvc.ViewFeatures/2.2.0": {
@@ -8782,6 +8808,7 @@
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.AspNetCore >= 2.2.0",
       "Microsoft.AspNetCore.Mvc >= 2.2.0",
+      "Microsoft.AspNetCore.Mvc.Versioning >= 3.1.2",
       "Microsoft.EntityFrameworkCore >= 2.2.1",
       "Microsoft.EntityFrameworkCore.Design >= 2.2.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.2.1",
@@ -8837,6 +8864,10 @@
           "Microsoft.AspNetCore.Mvc": {
             "target": "Package",
             "version": "[2.2.0, )"
+          },
+          "Microsoft.AspNetCore.Mvc.Versioning": {
+            "target": "Package",
+            "version": "[3.1.2, )"
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",

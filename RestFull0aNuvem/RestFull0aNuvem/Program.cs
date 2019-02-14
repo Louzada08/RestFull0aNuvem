@@ -12,6 +12,7 @@ namespace RestFull0aNuvem
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .UseIISIntegration()
                 .UseStartup<Startup>();
     }
 }

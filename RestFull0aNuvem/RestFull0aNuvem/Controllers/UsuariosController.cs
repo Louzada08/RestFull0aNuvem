@@ -1,35 +1,35 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using RestFull0aNuvem.Model.Context;
-using RestFull0aNuvem.Services;
+using RestFull0aNuvem.Negocios;
 using System;
 using Microsoft.AspNetCore.Http;
 using System.Linq;
 
 namespace RestFull0aNuvem.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
+    [ApiVersion("1")]
+    [Route("v{version:apiVersion}/[controller]")]
     public class UsuariosController : ControllerBase
     {
-        private IUsuarioService _UsuarioService;
+        private IUsuarioNegocios _UsuarioNegocios;
 
-        public UsuariosController(IUsuarioService UsuarioService)
+        public UsuariosController(IUsuarioNegocios usuarioNegocios)
         {
-            _UsuarioService = UsuarioService;
+            _UsuarioNegocios = usuarioNegocios;
         }
 
         // GET api/values
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok(_UsuarioService.FindAll());
+            return Ok(_UsuarioNegocios.FindAll());
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
         public IActionResult Get(long id)
         {
-            var Usuario = _UsuarioService.FindById(id);
+            var Usuario = _UsuarioNegocios.FindById(id);
             if (Usuario == null) return NotFound();
 
             return Ok(Usuario);
@@ -46,7 +46,7 @@ namespace RestFull0aNuvem.Controllers
             if (tamanhoPagina > 10)
                 return BadRequest("O tamanho maximo de pagina permitido e 10.");
 
-            var usrPage = _UsuarioService.FindPage(pagina, tamanhoPagina);
+            var usrPage = _UsuarioNegocios.FindPage(pagina, tamanhoPagina);
 
             int totalPaginas = (int)Math.Ceiling(usrPage.Count / Convert.ToDecimal(tamanhoPagina));
 
@@ -55,7 +55,6 @@ namespace RestFull0aNuvem.Controllers
 
             HttpContext.Response.Headers.Add("X-Paginacao-TotalPaginas", totalPaginas.ToString());
 
-            
             if (pagina > 1)
                 HttpContext.Response.Headers.Add("X-Paginacao-PaginaAnterior",
                     Url.Link("rotaPaginada", new { pagina = pagina - 1, tamanhoPagina = tamanhoPagina }));
@@ -75,7 +74,7 @@ namespace RestFull0aNuvem.Controllers
         public IActionResult Post([FromBody] Usuario usuario)
         {
             if (usuario == null) return BadRequest();
-            return new ObjectResult(_UsuarioService.Create(usuario));
+            return new ObjectResult(_UsuarioNegocios.Create(usuario));
         }
 
         // PUT api/values/5
@@ -83,15 +82,14 @@ namespace RestFull0aNuvem.Controllers
         public IActionResult Put([FromBody] Usuario value)
         {
             if (value == null) return BadRequest();
-            return new ObjectResult(_UsuarioService.Update(value));
+            return new ObjectResult(_UsuarioNegocios.Update(value));
         }
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        public void Delete(int id)
         {
-            _UsuarioService.Delete(id);
-            return new ObjectResult(_UsuarioService.Delete(id));
+            _UsuarioNegocios.Delete(id);
         }
     }
 }
