@@ -8,4 +8,9 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <_PublishTargetUrl>C:\websites\urpay</_PublishTargetUrl>
   </PropertyGroup>
+  <ItemGroup>
+    <File Include="Controllers/json-schema.json">
+      <publishTime>10/18/2018 21:57:42</publishTime>
+    </File>
+  </ItemGroup>
 </Project>

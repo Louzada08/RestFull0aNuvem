@@ -1,4 +1,4 @@
-﻿using RestFull0aNuvem.Model.Context;
+﻿using RestFull0aNuvem.Data.VO;
 using System.Collections.Generic;
 
 namespace RestFull0aNuvem.Negocios
@@ -6,11 +6,11 @@ namespace RestFull0aNuvem.Negocios
 {
     public interface IUsuarioNegocios
     {
-        Usuario Create(Usuario usuario);
-        Usuario FindById(long id);
-        List<Usuario> FindPage(int pagina, int tamanhoPagina);
-        List<Usuario> FindAll();
-        Usuario Update(Usuario usuario);
-        void Delete(long id);
+        UsuarioVO Create(UsuarioVO UsuarioVO);
+        UsuarioVO FindById(long id);
+        List<UsuarioVO> FindPage(int pagina, int tamanhoPagina);
+        List<UsuarioVO> FindAll();
+        UsuarioVO Update(UsuarioVO UsuarioVO);
+        UsuarioVO Delete(long id);
     }
 }
